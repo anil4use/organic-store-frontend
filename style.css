@@ -1208,18 +1208,18 @@ video {
     border: 1px solid gray;
 }
 
+/* 
 .notice {
     padding-top: 20px;
-}
+} */
 
-.notice h1 {
+/* .notice h1 {
     text-align: center;
-    /* width: fit-content; */
     padding: 4px;
     margin: auto;
     background-color: red;
     color: white;
-}
+} */
 
 .notice h6 {
     color: red;
@@ -1958,4 +1958,125 @@ img.amazon-img {
     margin: 2% auto;
     text-align: center;
     z-index: 99999999;
+}
+
+/* Product FAQ (scoped) */
+.product-faq {
+    background: #f7f9fc;
+    border: 1px solid #e6e8ee;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.product-faq .faq-header h2 {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.product-faq .faq-byline {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.product-faq .faq-overview {
+    color: #334155;
+    line-height: 1.7;
+    background: #ffffff;
+    border: 1px solid #e6e8ee;
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.product-faq .faq-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.product-faq .faq-card {
+    background: #ffffff;
+    border: 1px solid #e6e8ee;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.product-faq .faq-card h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.product-faq .faq-card ul,
+.product-faq .faq-card ol {
+    padding-left: 18px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.product-faq .faq-title {
+    margin-top: 24px;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.product-faq .faq-list {
+    counter-reset: faq;
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.product-faq .faq-list li {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e6e8ee;
+    border-radius: 12px;
+    padding: 16px 18px 16px 56px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(17, 24, 39, 0.04);
+}
+
+.product-faq .faq-list li::before {
+    counter-increment: faq;
+    content: counter(faq);
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.product-faq .faq-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.product-faq .faq-answer {
+    color: #334155;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .product-faq {
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .product-faq .faq-header h2 {
+        font-size: 20px;
+    }
 }
