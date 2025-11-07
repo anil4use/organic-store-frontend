@@ -216,7 +216,7 @@ async function triggerDelivery(token, formData, phone) {
     orderData: {
       order_id: Date.now(),
       order_date: formattedDate,
-      pickup_location: "@ESAGARH",
+      pickup_location: "@MR.MONKSKINO ,Shop no, 77/2 heena colony khajrana, Indore,  heena colony, Indore, Madhya Pradesh, 452016",
       comment: "Reseller: MONK2SKINO",
       billing_customer_name: formData.firstName,
       billing_last_name: formData.lastName,
